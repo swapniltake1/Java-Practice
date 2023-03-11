@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+ xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" 
+id="WebApp_ID" version="4.0">
+
+<welcome-file-list>
+<welcome-file>home.html</welcome-file>
+</welcome-file-list>
+
+<!-- First Servlet Declaration and mapping -->
+<servlet>
+<servlet-name>First</servlet-name>
+<servlet-class>com.servlets.FirstServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>First</servlet-name>
+<url-pattern>/FirstServlet</url-pattern>
+</servlet-mapping>
+<!-- First Servlet Declaration and mapping end -->
+
+<!-- Second Servlet Declaration and mapping -->
+<servlet>
+<servlet-name>Second</servlet-name>
+<servlet-class>com.servlets.SecoendServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>First</servlet-name>
+<url-pattern>/SecoendServlet</url-pattern>
+</servlet-mapping>
+<!-- Second Servlet Declaration and mapping end -->
+
+
+<servlet>
+<servlet-name>MyServlet</servlet-name>
+<servlet-class>com.servlets.httpservlet.MyServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>MyServlet</servlet-name>
+<url-pattern>/MyServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>RegisterServlet</servlet-name>
+<servlet-class>com.servlet.http.forms.RegisterServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>RegisterServlet</servlet-name>
+<url-pattern>/RegisterServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>SuccessServlet</servlet-name>
+<servlet-class>com.servlet.http.forms.SuccessServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>SuccessServlet</servlet-name>
+<url-pattern>/SuccessServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>S1</servlet-name>
+<servlet-class>com.servlet.attribute.S1</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>S1</servlet-name>
+<url-pattern>/S1</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>S2</servlet-name>
+<servlet-class>com.servlet.attribute.S2</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>S2</servlet-name>
+<url-pattern>/S2</url-pattern>
+</servlet-mapping>
+
+<!-- Servlet Mapping For Package com.servlet.SessionTracking -->
+<!-- For Servlet1 -->
+<servlet>
+<servlet-name>Servlet1</servlet-name>
+<servlet-class>com.servlet.SessionTracking.Servlet1</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>Servlet1</servlet-name>
+<url-pattern>/Servlet1</url-pattern>
+</servlet-mapping>
+
+<!-- For Servlet 2 -->
+<servlet>
+<servlet-name>Servlet2</servlet-name>
+<servlet-class>com.servlet.SessionTracking.Servlet2</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>Servlet2</servlet-name>
+<url-pattern>/Servlet2</url-pattern>
+</servlet-mapping>
+
+
+
+
+</web-app>
+</root>
